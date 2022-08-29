@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 1234;
+const port = process.env.PORT || 1234;
 
 app.get('/', (req, res) => {
 	res.json({ name: 'mayur', address: 'idar' });
